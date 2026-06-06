@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio mahasiswa Jihan Nabilah Rahman untuk mata kuliah Ekonomi Informasi." />
+  <title>Jihan Nabilah Rahman | Portfolio Mahasiswa</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <header id="navbar" class="fixed left-0 top-0 z-50 w-full">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Navigasi utama">
+      <a href="#home" class="brand-link" aria-label="Ke halaman Home">
+        <span class="brand-mark">EI</span>
+        <span>
+          <span class="brand-title">Ekonomi Informasi</span>
+          <span class="brand-subtitle">Student Portfolio</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-7 lg:flex">
+        <a href="#home" class="nav-link active">Home</a>
+        <div class="dropdown-parent">
+          <button class="nav-link dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            Project
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="#project-team" class="dropdown-item" role="menuitem">Project Team</a>
+            <a href="#project-individu" class="dropdown-item" role="menuitem">Project Individu</a>
+          </div>
+        </div>
+        <a href="#gallery" class="nav-link">Galery Foto</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button id="hamburger" class="icon-button lg:hidden" type="button" aria-label="Buka menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-panel lg:hidden" aria-hidden="true">
+      <div class="mobile-panel-inner">
+        <a href="#home" class="mobile-link">Home</a>
+        <button id="mobile-project-toggle" class="mobile-link mobile-project-toggle" type="button" aria-expanded="false">
+          Project
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+        <div id="mobile-project-menu" class="mobile-submenu">
+          <a href="#project-team" class="mobile-link mobile-sub-link">Project Team</a>
+          <a href="#project-individu" class="mobile-link mobile-sub-link">Project Individu</a>
+        </div>
+        <a href="#gallery" class="mobile-link">Galery Foto</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section section-offset">
+      <div class="hero-grid mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-32 lg:grid-cols-[1.06fr_0.94fr] lg:px-8 lg:pb-24 lg:pt-36">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio Mahasiswa</p>
+          <h1>Jihan Nabilah Rahman</h1>
+          <p class="hero-subtitle">
+            Mahasiswa Sistem Informasi Universitas Bakrie yang memiliki minat pada analisis sistem, teknologi digital, UI/UX, data analysis, dan pengembangan solusi berbasis teknologi.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#project-team" class="btn btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+          <div class="hero-stats" aria-label="Ringkasan portfolio">
+            <div>
+              <strong>12+</strong>
+              <span>Skill utama</span>
+            </div>
+            <div>
+              <strong>7</strong>
+              <span>Project contoh</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="student-card">
+            <div class="photo-frame">
+              <!-- Ganti blok placeholder ini dengan <img src="path/foto-jihan.jpg" alt="Foto Jihan Nabilah Rahman"> jika foto asli sudah tersedia. -->
+              <div class="student-photo-placeholder">
+                <span>Foto Mahasiswa</span>
+              </div>
+            </div>
+            <div class="student-card-content">
+              <p>Sistem Informasi | Universitas Bakrie</p>
+              <h2>Mahasiswa aktif yang berfokus pada sistem informasi, UI/UX, data, dan produk digital.</h2>
+            </div>
+          </div>
+          <div class="floating-note note-one">
+            <span>UI/UX</span>
+            <strong>Design Thinking</strong>
+          </div>
+          <div class="floating-note note-two">
+            <span>Data</span>
+            <strong>Decision Support</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-offset bg-white px-5 py-20 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Biodata Mahasiswa</p>
+          <h2>About Me</h2>
+          <p>
+            Portfolio ini menampilkan biodata, perjalanan akademik, project, dokumentasi kegiatan, dan kontak Jihan Nabilah Rahman sebagai mahasiswa Sistem Informasi.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
+          <article class="profile-card reveal">
+            <div class="profile-header">
+              <div class="profile-avatar">JN</div>
+              <div>
+                <h3>Jihan Nabilah Rahman</h3>
+                <p>Mahasiswa Aktif Sistem Informasi</p>
+              </div>
+            </div>
+            <p class="profile-description">
+              Jihan Nabilah Rahman adalah mahasiswa Sistem Informasi di Universitas Bakrie yang memiliki ketertarikan pada pengembangan sistem informasi, analisis sistem, UI/UX design, data analysis, dan pemanfaatan teknologi digital untuk mendukung kebutuhan bisnis. Website ini dibuat sebagai portfolio mahasiswa untuk menampilkan biodata, perjalanan akademik, project, galeri kegiatan, dan kontak.
+            </p>
+          </article>
+
+          <div class="bio-grid reveal">
+            <div class="bio-item">
+              <span>Nama Lengkap</span>
+              <strong>Jihan Nabilah Rahman</strong>
+            </div>
+            <div class="bio-item">
+              <span>Program Studi</span>
+              <strong>Sistem Informasi</strong>
+            </div>
+            <div class="bio-item">
+              <span>Universitas</span>
+              <strong>Universitas Bakrie</strong>
+            </div>
+            <div class="bio-item">
+              <span>Fakultas</span>
+              <strong>Fakultas Teknik dan Ilmu Komputer</strong>
+            </div>
+            <div class="bio-item">
+              <span>Status</span>
+              <strong>Mahasiswa Aktif</strong>
+            </div>
+            <div class="bio-item">
+              <span>Lokasi</span>
+              <strong>Jakarta, Indonesia</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article class="skill-card reveal">
+            <h3>Minat</h3>
+            <div class="pill-list">
+              <span>Sistem Informasi</span>
+              <span>Analisis Sistem</span>
+              <span>UI/UX Design</span>
+              <span>Data Analysis</span>
+              <span>Business Intelligence</span>
+              <span>Teknologi Digital</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Keahlian</h3>
+            <div class="pill-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Tailwind CSS</span>
+              <span>Figma</span>
+              <span>SQL</span>
+              <span>Python Dasar</span>
+              <span>Flutter</span>
+              <span>VB.NET</span>
+              <span>Microsoft Office</span>
+              <span>Canva</span>
+              <span>Google Workspace</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Soft Skill</h3>
+            <div class="pill-list">
+              <span>Komunikasi</span>
+              <span>Teamwork</span>
+              <span>Leadership</span>
+              <span>Problem Solving</span>
+              <span>Manajemen Waktu</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="academic" class="section-offset academic-section px-5 py-20 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pendidikan & Pencapaian</p>
+          <h2>Perjalanan Akademik</h2>
+          <p>Ringkasan pendidikan, pelatihan, dan pengalaman project akademik yang membentuk kemampuan Jihan di bidang sistem informasi.</p>
+        </div>
+
+        <div class="timeline mt-12">
+          <article class="timeline-item reveal">
+            <div class="timeline-icon" aria-hidden="true">UB</div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023 - Sekarang</span>
+              <h3>Universitas Bakrie</h3>
+              <p class="timeline-meta">Program Studi Sistem Informasi</p>
+              <p>Menempuh pendidikan di Program Studi Sistem Informasi dengan fokus pada analisis sistem, manajemen data, pengembangan aplikasi, UI/UX, dan pemanfaatan teknologi informasi dalam bisnis.</p>
+              <span class="timeline-badge">Kampus</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-icon" aria-hidden="true">SMA</div>
+            <div class="timeline-card">
+              <span class="timeline-year">2020 - 2023</span>
+              <h3>SMAN 26 Jakarta</h3>
+              <p class="timeline-meta">Jurusan IPA</p>
+              <p>Menyelesaikan pendidikan menengah atas dengan pengalaman aktif dalam kegiatan organisasi, kepanitiaan, dan pengembangan kemampuan komunikasi serta kepemimpinan.</p>
+              <span class="timeline-badge">Sekolah</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-icon" aria-hidden="true">CERT</div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024 - Sekarang</span>
+              <h3>Sertifikasi / Pelatihan</h3>
+              <ul class="timeline-list">
+                <li>Figma for UI/UX Design</li>
+                <li>Memulai Pemrograman dengan Python</li>
+                <li>Belajar Dasar Data Science</li>
+              </ul>
+              <p>Mengikuti berbagai pelatihan untuk meningkatkan kemampuan di bidang teknologi, desain, pemrograman, dan data.</p>
+              <span class="timeline-badge">Sertifikat</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-icon" aria-hidden="true">PRJ</div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024 - Sekarang</span>
+              <h3>Pengalaman Project Akademik</h3>
+              <ul class="timeline-list">
+                <li>Project Visual Programming menggunakan VB.NET</li>
+                <li>Project Mobile Programming menggunakan Flutter</li>
+                <li>Project database menggunakan SQL, DFD, dan ERD</li>
+                <li>Project UI/UX menggunakan Figma</li>
+                <li>Project WebGIS / Sistem Informasi</li>
+              </ul>
+              <p>Mengerjakan berbagai project akademik yang berkaitan dengan pengembangan aplikasi, perancangan sistem, database, dan visualisasi informasi.</p>
+              <span class="timeline-badge">Project</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-offset section-tint px-5 py-20 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project</p>
+          <h2>Project Team dan Project Individu</h2>
+          <p>Beberapa contoh karya yang menggambarkan minat pada pengembangan web, analisis sistem, UI/UX, dan data.</p>
+        </div>
+
+        <div id="project-team" class="project-block section-offset mt-12">
+          <div class="project-block-heading reveal">
+            <span>01</span>
+            <h3>Project Team</h3>
+          </div>
+          <div class="project-grid three">
+            <article class="project-card reveal">
+              <div class="project-icon">BB</div>
+              <h4>BarangBareng</h4>
+              <p>Project platform berbasis web untuk membantu mahasiswa menyewa dan meminjam barang secara lebih mudah, aman, dan terorganisir.</p>
+              <dl>
+                <div><dt>Role</dt><dd>UI/UX Design, Frontend, Analisis Sistem</dd></div>
+                <div><dt>Teknologi</dt><dd>HTML, CSS, JavaScript, Tailwind CSS</dd></div>
+              </dl>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-icon">GIS</div>
+              <h4>WebGIS / Sistem Informasi</h4>
+              <p>Project berbasis sistem informasi yang menampilkan data secara visual dan interaktif untuk mendukung analisis kebutuhan pengguna.</p>
+              <dl>
+                <div><dt>Role</dt><dd>Analisis, Perancangan, Dokumentasi</dd></div>
+                <div><dt>Teknologi</dt><dd>Web, Data, GIS, Sistem Informasi</dd></div>
+              </dl>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-icon">APP</div>
+              <h4>Project Mobile Programming</h4>
+              <p>Project pengembangan aplikasi mobile menggunakan Flutter dengan fokus pada tampilan frontend dan pengalaman pengguna.</p>
+              <dl>
+                <div><dt>Role</dt><dd>Frontend Developer, UI Design</dd></div>
+                <div><dt>Teknologi</dt><dd>Flutter, Figma</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+
+        <div id="project-individu" class="project-block section-offset mt-14">
+          <div class="project-block-heading reveal">
+            <span>02</span>
+            <h3>Project Individu</h3>
+          </div>
+          <div class="project-grid three">
+            <article class="project-card reveal">
+              <div class="project-icon">WEB</div>
+              <h4>Portfolio Website</h4>
+              <p>Website personal portfolio mahasiswa yang menampilkan biodata, perjalanan akademik, project, galeri, dan kontak.</p>
+              <dl>
+                <div><dt>Teknologi</dt><dd>HTML, CSS, JavaScript, Tailwind CSS</dd></div>
+              </dl>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-icon">UX</div>
+              <h4>UI/UX Design</h4>
+              <p>Perancangan tampilan aplikasi atau website menggunakan Figma dengan memperhatikan kemudahan penggunaan dan tampilan visual.</p>
+              <dl>
+                <div><dt>Tools</dt><dd>Figma</dd></div>
+              </dl>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-icon">SQL</div>
+              <h4>Analisis Data Sederhana</h4>
+              <p>Analisis data menggunakan spreadsheet, SQL, atau tools sederhana untuk membantu pengambilan keputusan.</p>
+              <dl>
+                <div><dt>Tools</dt><dd>Excel, Spreadsheet, SQL</dd></div>
+              </dl>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-icon">DB</div>
+              <h4>Database Design</h4>
+              <p>Perancangan database menggunakan DFD, ERD, dan SQL untuk mendukung kebutuhan sistem informasi.</p>
+              <dl>
+                <div><dt>Tools</dt><dd>SQL, DFD, ERD</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-offset bg-white px-5 py-20 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Galery Foto</p>
+          <h2>Dokumentasi Kegiatan</h2>
+          <p>Placeholder galeri berikut dapat diganti dengan foto asli kegiatan kampus, project, presentasi, dan organisasi.</p>
+        </div>
+
+        <div class="gallery-grid mt-12">
+          <button class="gallery-item reveal" type="button" data-title="Kegiatan Kampus" data-tone="blue">
+            <span>Kegiatan Kampus</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-title="Project Team" data-tone="gold">
+            <span>Project Team</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-title="Presentasi" data-tone="cyan">
+            <span>Presentasi</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-title="Organisasi" data-tone="navy">
+            <span>Organisasi</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-title="Seminar" data-tone="silver">
+            <span>Seminar</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-title="Dokumentasi Mahasiswa" data-tone="sky">
+            <span>Dokumentasi Mahasiswa</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-offset contact-section px-5 py-20 lg:px-8 lg:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Hubungi Saya</h2>
+          <p>Terbuka untuk diskusi project, kolaborasi, dan komunikasi akademik terkait teknologi, bisnis digital, atau sistem informasi.</p>
+
+          <div class="contact-list">
+            <span>Jihan Nabilah Rahman</span>
+            <a href="mailto:jihan.nabilah@email.com">jihan.nabilah@email.com</a>
+            <span>Jakarta, Indonesia</span>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn Placeholder</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub Placeholder</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram Placeholder</a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal" novalidate>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label>
+              <span>Nama</span>
+              <input name="name" type="text" placeholder="Nama kamu" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="email@example.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Pesan</span>
+            <textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+          </label>
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary w-full justify-center">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <a href="#home" class="footer-brand">Ekonomi Informasi</a>
+        <p>Jihan Nabilah Rahman</p>
+        <p class="copyright">Copyright 2026. Portfolio Mahasiswa Sistem Informasi Universitas Bakrie.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Project</a>
+        <a href="#gallery">Galery Foto</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Kembali ke atas">
+    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-card" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Tutup galeri">&times;</button>
+      <div id="lightbox-visual" class="lightbox-visual"></div>
+      <h3 id="lightbox-title"></h3>
+      <p>Placeholder foto. Ganti elemen galeri dengan gambar asli ketika file dokumentasi sudah tersedia.</p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
