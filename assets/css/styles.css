@@ -10,7 +10,7 @@
   --shadow: 0 24px 70px rgba(15, 31, 74, 0.13);
 }
 
-/* Tailwind CDN fallback for the utility classes used in this page. */
+/* Local utility classes replacing the old Tailwind CDN usage for production. */
 .fixed { position: fixed; }
 .left-0 { left: 0; }
 .top-0 { top: 0; }
